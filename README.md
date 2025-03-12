@@ -9,7 +9,7 @@ Before you start, ensure you have everything installed ! For this you can check 
 🚀 Getting Started
 
 Clone this repository:
-git clone https://github.com/yourusername/flutter-training.git
+git clone https://github.com/EnzoFantapieHamang/flutter.git
 
 Navigate to the desired training module:
 cd flutter-training/beginner/intro_to_flutter
