@@ -1,6 +1,6 @@
 # flutter_f
 
-Welcome to my flutter formation, here you can find all the code of a flutter application from the ground to the end step by step 
+Welcome to my flutter formation, here you can find all the code of a flutter application from the ground to the end step by step.
 
 📌 Prerequisites
 
@@ -12,19 +12,15 @@ Clone this repository:
 git clone https://github.com/EnzoFantapieHamang/flutter.git
 
 Navigate to the desired training module:
-cd flutter-training/beginner/intro_to_flutter
+cd flutter
+
+To look at branches:
+git branch -a
+
+go to a specific branch:
+git checkout (branch name)
 
 Run the Flutter project:
 flutter run
-
-📚 Learning Topics
-
-This repository covers:
-Flutter Basics: Widgets, Layouts, Navigation
-State Management: setState, Provider, Riverpod, Bloc
-Networking & APIs: HTTP requests, JSON parsing
-Database Integration: SQLite, Hive, Firebase
-Animations & UI: Implicit & Explicit Animations, CustomPaint
-Advanced Concepts: Native Platform Integration, Performance Optimization
 
 Happy coding! 🚀
