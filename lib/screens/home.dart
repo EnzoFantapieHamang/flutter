@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_f/screens/menu.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -8,9 +9,17 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 219, 130, 26),
-        leading: Icon(Icons.menu, color: Colors.white),
+        leading: Builder(
+          builder: (context) => IconButton(
+            icon: Icon(Icons.menu, color: Colors.white),
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
+          ),
+        ),
         title: Text("ADVENTURIS", style: TextStyle(color: Colors.white)),
       ),
+      drawer: Menu(),
       body: Stack(
         children: [
           Positioned.fill(
@@ -23,8 +32,8 @@ class Home extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
-                textAlign: TextAlign.center,
                 "ADVENTURIS est une association créée entre amis qui permet de faire du sport extrême. Vous pouvez choisir l’activité que vous désirez et réserver pour un créneau ! Have a good trip !!",
+                textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Colors.white),
                 softWrap: true,
                 overflow: TextOverflow.visible,
