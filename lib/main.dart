@@ -13,7 +13,7 @@ void main() {
           children: [
             Positioned.fill(
               child: Image.asset(
-                "assets/images/surf_fond.png",
+                "assets/images/surf.png",
                 fit: BoxFit.cover,
               ),
             ),
