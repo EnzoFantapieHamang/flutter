@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_f/screens/categories.dart';
 import 'package:flutter_f/screens/filters.dart';
 
 class Menu extends StatelessWidget {
@@ -40,7 +41,15 @@ class Menu extends StatelessWidget {
             iconColor: Colors.white,
             leading: Icon(Icons.category),
             title: Text('Catégories'),
-            onTap: () {},
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Categories()
+                ),
+              );
+            },
           ),
           ListTile(
             textColor: Colors.white,
