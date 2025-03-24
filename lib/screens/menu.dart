@@ -20,7 +20,7 @@ class Menu extends StatelessWidget {
                   Icon(Icons.surfing, size: 34, color: Colors.white),
                   SizedBox(height: 5),
                   Text(
-                    'Adventures Trip',
+                    'Adventures Tri',
                     style: TextStyle(fontSize: 24, color: Colors.white),
                   ),
                 ],
