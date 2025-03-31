@@ -10,7 +10,7 @@ class Sport{
   });
 
   final String name;
-  final List<Saison> saisons;
+  final List<String> saisons;
   final bool isForChildren;
   final bool isForPregnantWomen;
   final bool isForbeginner;

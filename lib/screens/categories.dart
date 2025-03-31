@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sport/data/data.dart';
 import 'package:flutter_sport/model/Saison.dart';
+import 'package:flutter_sport/screens/activities.dart';
 import 'package:flutter_sport/widgets/category.dart';
 
 class Categories extends StatelessWidget {
@@ -7,6 +9,18 @@ class Categories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    void _selectedCategory(BuildContext context, Saison saison) {
+      final typeDeSports =
+          sports.where((sport) {
+            return sport.saisons.contains(saison.name);
+          }).toList();
+
+
+      Navigator.of(context).push(
+        MaterialPageRoute(builder: (ctx) => Activities(type: typeDeSports)),
+      );
+    }
+
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 254, 102, 0),
       appBar: AppBar(
@@ -25,16 +39,22 @@ class Categories extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Category(
-              saison: Saison(
-                name: 'Été',
-                ),
-              ),
+              onSelect: () {
+                _selectedCategory(
+                  context, Saison(
+                    name: 'Été',
+                  ),
+                );
+              },
+              saison: Saison(name: 'Été'),
+            ),
             SizedBox(height: 20),
             Category(
-              saison: Saison(
-                name: 'Hiver',
-                ),
-              ),
+              onSelect: () {
+                _selectedCategory(context, Saison(name: 'Hiver'));
+              },
+              saison: Saison(name: 'Hiver'),
+            ),
           ],
         ),
       ),

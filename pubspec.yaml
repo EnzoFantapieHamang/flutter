@@ -62,7 +62,9 @@ flutter:
     - assets/images/surf.png
     - assets/images/ski.jpg
     - assets/images/escalade.jpg
-
+    - assets/images/skate.jpg
+    - assets/images/yoga.jpg
+    - assets/images/surf.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
