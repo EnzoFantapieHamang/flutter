@@ -6,7 +6,8 @@ class Sport{
     required this.saisons,
     required this.isForChildren,
     required this.isForPregnantWomen,
-    required this.isForbeginner
+    required this.isForbeginner,
+    required this.description
   });
 
   final String name;
@@ -14,4 +15,5 @@ class Sport{
   final bool isForChildren;
   final bool isForPregnantWomen;
   final bool isForbeginner;
+  final String description;
 }

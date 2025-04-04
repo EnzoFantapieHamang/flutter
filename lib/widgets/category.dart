@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sport/model/Saison.dart';
-import 'package:flutter_sport/screens/activities.dart';
 
 class Category extends StatelessWidget {
   const Category({super.key, required this.saison, required this.onSelect});

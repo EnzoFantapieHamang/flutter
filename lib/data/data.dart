@@ -9,38 +9,43 @@ const lesSaisons = [
 
 const sports = [
   Sport(
-    name: 'Escalade',
+    name: 'escalade',
     saisons: ['Été'],
     isForChildren: true,
     isForPregnantWomen: false,
     isForbeginner: true,
+    description: "Dans notre équipe, nous avons des grimpeurs professionnels diplômés du DE d'escalade qui organisent des sessions sur roche vers la frontière espagnole, à côté de Bielsa."
   ),
   Sport(
-    name: 'Ski',
+    name: 'ski',
     saisons: ['Hiver'],
     isForChildren: true,
     isForPregnantWomen: false,
     isForbeginner: true,
+    description: "Dans notre équipe, nous avons des moniteurs de ski et des champions de freeride qui organisent des sorties ski."
   ),
   Sport(
-    name: 'Yoga',
+    name: 'yoga',
     saisons: ['Été','Hiver'],
     isForChildren: true,
     isForPregnantWomen: true,
     isForbeginner: true,
+    description: "Dans notre équipe, nous avons des coachs de yoga qui proposent de temps en temps des cours."
   ),
   Sport(
-    name: 'Skate',
+    name: 'skate',
     saisons: ['Été'],
     isForChildren: true,
     isForPregnantWomen: false,
     isForbeginner: true,
+    description: "Dans notre équipe, nous avons des skaters professionnels qui pourront vous apprendre et vous accompagner dans cette discipline."
   ),
   Sport(
-    name: 'Surf',
+    name: 'surf',
     saisons:['Été'],
     isForChildren: true,
     isForPregnantWomen: false,
     isForbeginner: false,
+    description: "Dans notre équipe, nous avons des surfers professionnels qui organisent des sessions de surf vers la côte basque et les landes."
   ),
 ];
