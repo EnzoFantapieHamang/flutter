@@ -8,6 +8,22 @@ class Detail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Future<void> date() async {
+      final selectedDate = await showDatePicker(
+        context: context,
+        firstDate: DateTime.now(),
+        lastDate: DateTime(2026),
+      );
+      if (selectedDate != null) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Center(child: Text('Session réservée !')),
+            duration: Duration(seconds: 2),
+          ),
+        );
+      }
+    }
+
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 254, 102, 0),
       appBar: AppBar(
@@ -27,7 +43,10 @@ class Detail extends StatelessWidget {
             Center(
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(15),
-                child: Image.asset('assets/images/${sport.name}.jpg', width: 360),
+                child: Image.asset(
+                  'assets/images/${sport.name}.jpg',
+                  width: 360,
+                ),
               ),
             ),
             SizedBox(height: 30),
@@ -44,7 +63,13 @@ class Detail extends StatelessWidget {
                   "Veuillez sélectionner une date : ",
                   style: TextStyle(color: Colors.white, fontSize: 17),
                 ),
-                Icon(Icons.edit_calendar, color: Colors.white),
+                IconButton(
+                  icon: Icon(Icons.edit_calendar),
+                  color: Colors.white,
+                  onPressed: () {
+                    date();
+                  },
+                ),
               ],
             ),
           ],
