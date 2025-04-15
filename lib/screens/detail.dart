@@ -27,7 +27,6 @@ class Detail extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 254, 102, 0),
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 254, 102, 0),
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () {
